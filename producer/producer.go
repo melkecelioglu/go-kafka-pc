@@ -21,7 +21,7 @@ type CoinapiStruct struct {
 
 func main() {
 	conn, _ := kafka.DialLeader(context.Background(), "tcp", "localhost:9092", "topicX", 0)
-
+	//hello
 	conn.SetWriteDeadline(time.Now().Add(time.Second * 10))
 
 	for {
